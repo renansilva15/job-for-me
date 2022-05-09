@@ -113,7 +113,7 @@ body {
 .index-title {
     color: rgb(255, 255, 255);
     display: flex;
-    animation: animate 48s ease infinite;
+    animation: animate 48s ease-in-out infinite;
     background-position: center;
     min-height: 100vh;
 }
