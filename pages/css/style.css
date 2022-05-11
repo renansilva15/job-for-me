@@ -181,11 +181,12 @@
 .wall {
     color: rgb(255, 255, 255);
     display: flex;
-    background: url("../img/slide-04.jpg") no-repeat;
+    background: url("../img/slide-05.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
 }
+
 
 .index-h {
     display: flex;
