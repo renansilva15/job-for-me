@@ -1,4 +1,5 @@
 
+/*  Padrão  */
 
 * {
     box-sizing: border-box;
@@ -8,6 +9,14 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+body {
+    min-width: 420px;
+    min-height: 420px;
+}
+
+
+
+/*  Botões  */
 
 .btn-group {
     padding: 20px 20px;
@@ -66,7 +75,7 @@
 }
 
 #contact-send {
-        display: inline-block;
+    display: inline-block;
     border: 1px solid rgba(0, 0, 0, 0.4);
     background: rgba(88, 88, 88, 0.9);
     padding: 14px 28px;
@@ -85,6 +94,20 @@
 }
 
 
+#sign-btn {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: calc(50% - 120px);
+}
+
+
+
+
+
+
+
+/*  Slots  */
+
 #slot-sign {
     position: absolute;
     width: 40%;
@@ -101,20 +124,83 @@
         margin: calc(50px + 15vh) 10% 0;
     }
 }
-@media screen and (max-width: 390px) {
-    #slot-sign {
-        width: 100%;
-        margin: calc(50px + 15vh) 0 0;
+
+#contact-form {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    margin: calc(50px + 15vh) 20% 0;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 872px) {
+    #contact-form {
+        width: 96%;
+        margin: calc(50px + 15vh) 2% 0;
+    }
+}
+@media screen and (max-width: 510px) {
+    #contact-form {
+        width: 98%;
+        margin-top: calc(50px + 15vh) 1%;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #contact-form {
+        overflow-y: scroll;
     }
 }
 
-#sign-btn {
+.slot-freelancers {
+    width: 70%;
+    height: 60%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
     position: absolute;
-    margin-top: 20%;
-    margin-left: calc(50% - 120px);
+    margin: 15% 3%;
+}
+@media screen and (max-width: 935px) {
+    .slot-freelancers {
+        width: 86%;
+        margin: 20% 4%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .slot-freelancers {
+        width: 98%;
+        margin: 25% 1%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .slot-freelancers {
+        width: 98%;
+        margin: 35% 1%;
+    }
+}
+@media screen and (max-height: 630px ) { 
+    .slot-freelancers {
+        overflow-y: scroll;
+    }
 }
 
-/* cabeçalho */
+.slot-freelancer {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 7px;
+    width: 90%;
+    height: 75px;
+    position: relative;
+    margin: 2% auto ;
+}
+
+
+
+
+/*  Cabeçalho  */
+
 .header {
     width: 100%;
     height: 50px;
@@ -151,6 +237,11 @@
 }
 
 
+
+
+
+/*  Background | Imagens | Posicionamento  */
+
 .index-title {
     color: rgb(255, 255, 255);
     display: flex;
@@ -164,7 +255,7 @@
         background-size: cover;
     }
     25% {
-        background: url("../img/slide-02.jpg") no-repeat;
+        background: url("../img/slide-06.jpg") no-repeat;
         background-size: cover;
     }
     50% {
@@ -172,11 +263,10 @@
         background-size: cover;
     }
     75% {
-        background: url("../img/slide-04.jpg") no-repeat;
+        background: url("../img/slide-08.jpg") no-repeat;
         background-size: cover;
     }
 }
-
 
 .wall {
     color: rgb(255, 255, 255);
@@ -187,16 +277,78 @@
     min-height: 100vh;
 }
 
-
-.index-h {
-    display: flex;
-    position: absolute;
-    margin-left: 3vh;
-    margin-top: calc(50px + 2vh);
-    overflow: hidden;
+.team {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
 }
 
-/* ffff */
+
+.about-p {
+    margin: 3vh;
+}
+
+
+@media screen and (max-height: 420px) {
+    .index-title {
+        background-size: cover;
+        min-height: 420px;
+    }
+    .wall {
+        background-size: cover;
+        min-height: 420px;
+    }
+    .btn-group {
+        margin-top: 320px;
+        margin-left: 10px;
+    }
+    .title {
+        min-height: 420px;
+    }
+    #contact-form {
+        min-height: 200px;;
+    }
+    .slot-freelancers {
+        height: 256px;
+        margin: 147px 2px;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .index-title {
+        background-size: cover;
+        min-width: 420px;
+    }
+    .wall {
+        background-size: cover;
+        min-width: 420px;
+    }
+    .header {
+        min-width: 420px;
+    }
+    .inner-header {
+        min-width: 420px;
+    }
+    .user-footer-links{
+        min-width: 420px;
+    }
+    .title {
+        min-width: 420px;
+    }
+    #contact-form {
+        min-width: 420px;;
+    }
+    .slot-freelancers {
+        width: 416px;
+        margin: 147px 2px;
+    }
+}
+
+
+
+/* Textos */
 
 .title {
     position: absolute;
@@ -209,34 +361,21 @@
     margin-bottom: 5vh;
 }
 
-.about-p {
-    margin: 3vh;
-}
 
-#contact-form {
+.title-left {
     position: absolute;
-    width: 60%;
-    margin: calc(50px + 15vh) 20% 0;
-    padding: 40px;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin: calc(50px + 5vh) 5vh 0;
 }
 
-@media screen and (max-width: 872px) {
-    #contact-form {
-        width: 96%;
-        margin: calc(50px + 15vh) 2% 0;
-    }
+.index-h {
+    position: absolute;
+    margin-left: 3vh;
+    margin-top: calc(50px + 2vh);
 }
-@media screen and (max-width: 510px) {
-    #contact-form {
-        width: 100%;
-        margin-top: calc(50px + 15vh);
-        overflow-y: scroll;
-        padding: 10px;
-    }    
-}
+
+
 
 .contact-label {
     font-weight: bold;
@@ -250,7 +389,10 @@
     justify-content: space-between;
 }
 
-/*input*/
+
+
+
+/*  Input's  */
 
 #contact-name {
     border: 1px solid rgb(0, 0, 0);
@@ -287,7 +429,7 @@
     color: rgb(0, 0, 0);
     padding: 5px;
     width: 75%;
-    height: 20%;
+    height: 40%;
 }
 #contact-message:hover {
     background: rgba(255, 255, 255, 0.85);
@@ -295,21 +437,9 @@
 }
 
 
-.team {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    object-position: bottom;
-}
 
-.overflow {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-    min-height: calc(100vh - 50px);
-    min-width: 100%;
-}
 
+/*  Rodapé  */
 
 .fotter { 
     position: fixed;
