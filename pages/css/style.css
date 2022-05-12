@@ -196,7 +196,15 @@ body {
     margin: 2% auto ;
 }
 
-
+.avatar {
+    width: 69px;
+    height: 69px;
+    background: rgb(255, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 7px;
+    position: absolute;
+    margin: 3px 3px;
+}
 
 
 /*  Cabeçalho  */
@@ -313,6 +321,11 @@ body {
         height: 256px;
         margin: 147px 2px;
     }
+
+    #contact-form {
+        height: 256px;
+        margin: 147px 2px;
+    }
 }
 
 
@@ -342,6 +355,10 @@ body {
     }
     .slot-freelancers {
         width: 416px;
+        margin: 147px 2px;
+    }
+    #contact-form {
+        width: 256px;
         margin: 147px 2px;
     }
 }
@@ -389,7 +406,10 @@ body {
     justify-content: space-between;
 }
 
-
+.name {
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+}
 
 
 /*  Input's  */
