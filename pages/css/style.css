@@ -1,18 +1,177 @@
 
-body {background-color: rgb(191, 218, 218);}
-header {background-color: rgb(19, 189, 201); width: 100%; height: 15px; padding: 20px; position: fixed; top: 0; left: 0;}
-h1 {font-size: 50px; font-family: Arial; padding-top: 60px;}
 
-.logo-container {background-image: url(../img/logo.png); background-size: cover; width: 55px; height: 55px; position: fixed; left: 1px; top: 1px;}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
 
-.user-links {position: fixed; right: 10px; padding-bottom: 20px; font-family: Arial; font-size: 14px;}
-.links {color: black; font-weight: bold; text-decoration: none; margin: 10px;}
-.links:hover {color: blue; transition: 0.5;}
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* botões */
+/*.btn-group {
+    display: inline-flex;
+    padding: 20px 20px;
+    margin: 2vh;
+    font-size: 1.1rem;
+}
 
 
-.btn-group {font-size: 20px; font-family: Arial; margin-left: 50px; position: fixed; bottom: 80px; width: 1000px;}
-.freelancer-btn {color: black; background-color: rgb(19, 189, 201); border-style: solid; border-color: rgb(19, 189, 201); font-weight: bold; text-decoration: none; padding: 20px;}
-.freelancer-btn:hover {color: blue; transition: 0.5;}
+.fleelancer-btn {
+    background: rgb(111, 111, 111);
+    color: rgb(255, 255, 255);
+}
 
-.projects-btn {color: black; background-color: rgb(19, 189, 201); border-style: solid; border-color: rgb(19, 189, 201); font-weight: bold; text-decoration: none; margin: 20px; padding-left: 38px; padding-right: 38px; padding-top: 20px; padding-bottom: 20px;}
-.projects-btn:hover {color: blue; transition: 0.5;}
+.projects-btn {
+    background: rgb(111, 111, 111);
+    color: rgb(255, 255, 255);
+}*/
+
+.btn-group {
+    padding: 20px 20px;
+    margin-top: 80vh;
+    margin-left: 8vh;
+    font-size: 1.1rem;
+    display: inline-block;
+    position: relative;
+}
+
+
+.freelancer-btn {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: rgba(111, 111, 111, 0.9);
+    padding: 14px 28px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    vertical-align: middle;
+}
+.freelancer-btn:hover {
+    border-color: rgb(0, 0, 0);
+    background: rgba(78, 78, 78, 0.5);
+    color: rgb(255, 255, 255);
+}
+
+.projects-btn {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: rgba(111, 111, 111, 0.9);
+    padding: 14px 28px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    vertical-align: middle;
+}
+.projects-btn:hover {
+    border-color: rgb(0, 0, 0);
+    background: rgba(78, 78, 78, 0.5);
+    color: rgb(255, 255, 255);
+}
+
+/* cabeçalho */
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    background: rgba(111, 111, 111, 0.9);
+    color: rgb(255, 255, 255);
+}
+
+.inner-header {
+    height: 50px;
+    width: 100%;
+}
+
+.user-links {
+    height: 50px;
+    display: flex;
+    padding: 1%;
+    align-items: center;
+    justify-content: right;
+}
+
+.links {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 7px;
+}
+.links:hover {
+    border: solid 1px rgb(0, 0, 0);
+    background-color: rgba(162, 162, 162, 0.2);
+    transition: 250ms;
+}
+
+.index-title {
+    color: rgb(255, 255, 255);
+    display: flex;
+    animation: animate 48s ease-in-out infinite;
+    background-position: center;
+    min-height: 100vh;
+}
+@keyframes animate {
+    0%, 100% {
+        background: url("../img/slide-01.jpg") no-repeat;
+        background-size: cover;
+    }
+    25% {
+        background: url("../img/slide-02.jpg") no-repeat;
+        background-size: cover;
+    }
+    50% {
+        background: url("../img/slide-03.jpg") no-repeat;
+        background-size: cover;
+    }
+    75% {
+        background: url("../img/slide-04.jpg") no-repeat;
+        background-size: cover;
+    }
+}
+
+.index-h {
+    display: flex;
+    position: absolute;
+    margin-left: 3vh;
+    margin-top: calc(50px + 2vh);
+    overflow: hidden;
+}
+.overflow {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    min-height: calc(100vh - 50px);
+    min-width: 100%;
+}
+
+
+.fotter { 
+    position: fixed;
+    bottom: 0;
+    color: rgb(255, 255, 255);
+}
+
+.user-footer-links {
+    position: absolute;
+    font-size: 12px;
+    background-color: rgb(111, 111, 111);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.footer-links {
+    color: rgb(255, 255, 255); 
+    font-weight: bold; 
+    margin: 10px; 
+    left: 20px; 
+}
