@@ -1,34 +1,22 @@
 
+/*  Padrão  */
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
-}
-
-body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* botões */
-/*.btn-group {
-    display: inline-flex;
-    padding: 20px 20px;
-    margin: 2vh;
-    font-size: 1.1rem;
+body {
+    min-width: 420px;
+    min-height: 420px;
 }
 
 
-.fleelancer-btn {
-    background: rgb(111, 111, 111);
-    color: rgb(255, 255, 255);
-}
 
-.projects-btn {
-    background: rgb(111, 111, 111);
-    color: rgb(255, 255, 255);
-}*/
+/*  Botões  */
 
 .btn-group {
     padding: 20px 20px;
@@ -41,8 +29,8 @@ body {
 
 
 .freelancer-btn {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    background: rgba(111, 111, 111, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background: rgba(88, 88, 88, 0.9);
     padding: 14px 28px;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
@@ -53,13 +41,13 @@ body {
 }
 .freelancer-btn:hover {
     border-color: rgb(0, 0, 0);
-    background: rgba(78, 78, 78, 0.5);
+    background: rgba(88, 88, 88, 0.5);
     color: rgb(255, 255, 255);
 }
 
 .projects-btn {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    background: rgba(111, 111, 111, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background: rgba(88, 88, 88, 0.9);
     padding: 14px 28px;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
@@ -74,13 +62,249 @@ body {
     color: rgb(255, 255, 255);
 }
 
-/* cabeçalho */
+@media screen and (max-width: 422px) {
+    .freelancer-btn {
+        padding: 10px 20px;
+        font-size: 14;
+        margin-top: 10%;
+    }
+    .projects-btn {
+        padding: 10px 20px;
+        font-size: 14;
+    }
+}
+
+#contact-send {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background: rgba(88, 88, 88, 0.9);
+    padding: 14px 28px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    vertical-align: middle;
+}
+#contact-send:hover {
+    border-color: rgb(0, 0, 0);
+    background: rgba(78, 78, 78, 0.5);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+.sign-btn {
+    color: rgb(0, 0, 0);
+    padding: 10px 20px 10px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 7px;
+    position: absolute;
+    margin: 10% calc(50% - 55px);
+}
+.sign-btn:hover {
+    border: solid 1px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgba(162, 162, 162, 0.5);
+    transition: 250ms;
+}
+
+
+.invite {
+    color: rgb(255, 255, 255);
+    background: rgb(88, 88, 88);
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 7px;
+    padding: 7px;
+    position: absolute;
+    margin: 10px 82%;
+}
+.invite:hover {
+    border: solid 1px rgb(0, 0, 0);
+    background-color: rgba(162, 162, 162, 0.8);
+    transition: 250ms;
+}
+
+.open {
+    color: rgb(255, 255, 255);
+    background: rgb(88, 88, 88);
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 7px;
+    padding: 7px;
+    position: absolute;
+    margin: 10px 88%;
+}
+.open:hover {
+    border: solid 1px rgb(0, 0, 0);
+    background-color: rgba(162, 162, 162, 0.8);
+    transition: 250ms;
+}
+
+.back-btn {
+    position: absolute;
+    margin: 10px 60%;
+}
+.offer-btn {
+    position: absolute;
+    margin: 10px 75%;
+}
+
+.back-offer-btn {
+    display: block;
+    position: absolute;
+    margin: 10px 57%;
+}
+.offer-submit-btn {
+    display: block;
+    position: absolute;
+    margin: 10px 70%;
+}
+
+
+
+/*  Slots  */
+
+#slot-sign {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    margin: calc(50px + 15vh) 30% 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    align-items: center;
+}
+
+@media screen and (max-width: 740px) {
+    #slot-sign {
+        width: 80%;
+        margin: calc(50px + 15vh) 10% 0;
+    }
+}
+
+#contact-form {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    margin: calc(50px + 15vh) 20% 0;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 872px) {
+    #contact-form {
+        width: 96%;
+        margin: calc(50px + 15vh) 2% 0;
+    }
+}
+@media screen and (max-width: 550px) {
+    #contact-form {
+        width: 98%;
+        margin-top: calc(50px + 15vh) 1%;
+        padding: 10px;
+        overflow-y: scroll;
+    }
+}
+@media screen and (max-width: 500px) {
+    #contact-form {
+        overflow-y: scroll;
+    }
+}
+@media screen and (max-height: 550px) {
+    #contact-form {
+        overflow-y: scroll;
+    }
+    #slot-sign {
+        height: 230px;
+    }
+}
+
+
+
+.slot-freelancers {
+    width: 70%;
+    height: 60%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    position: absolute;
+    margin: 15% 3%;
+}
+@media screen and (max-width: 935px) {
+    .slot-freelancers {
+        width: 86%;
+        margin: 20% 4%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .slot-freelancers {
+        width: 98%;
+        margin: 25% 1%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .slot-freelancers {
+        width: 98%;
+        margin: 35% 1%;
+    }
+}
+@media screen and (max-height: 630px ) { 
+    .slot-freelancers {
+        overflow-y: scroll;
+    }
+}
+
+.avatar {
+    width: 69px;
+    height: 69px;
+    background: rgb(255, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 7px;
+    position: absolute;
+    margin: 3px 3px;
+}
+
+.slot-freelancer {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 7px;
+    width: 90%;
+    height: 75px;
+    position: relative;
+    margin: 2% auto ;
+}
+
+.slot-project {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 7px;
+    width: 90%;
+    height: 106px;
+    position: relative;
+    margin: 2% auto ;
+}
+
+.slot-project-open {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 7px;
+    width: 90%;
+    height: 80%;
+    position: relative;
+    margin: 2% auto ;
+}
+
+
+
+
+/*  Cabeçalho  */
+
 .header {
     width: 100%;
     height: 50px;
     display: flex;
     position: absolute;
-    background: rgba(111, 111, 111, 0.9);
+    background: rgba(88, 88, 88, 0.9);
     color: rgb(255, 255, 255);
 }
 
@@ -110,6 +334,12 @@ body {
     transition: 250ms;
 }
 
+
+
+
+
+/*  Background | Imagens | Posicionamento  */
+
 .index-title {
     color: rgb(255, 255, 255);
     display: flex;
@@ -123,7 +353,7 @@ body {
         background-size: cover;
     }
     25% {
-        background: url("../img/slide-02.jpg") no-repeat;
+        background: url("../img/slide-06.jpg") no-repeat;
         background-size: cover;
     }
     50% {
@@ -131,26 +361,338 @@ body {
         background-size: cover;
     }
     75% {
-        background: url("../img/slide-04.jpg") no-repeat;
+        background: url("../img/slide-08.jpg") no-repeat;
         background-size: cover;
     }
 }
 
-.index-h {
+.wall {
+    color: rgb(255, 255, 255);
     display: flex;
+    background: url("../img/slide-05.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.team {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+
+.about-p {
+    margin: 3vh;
+}
+
+
+
+/* Controle do body */
+
+@media screen and (max-height: 420px) {
+    .index-title {
+        background-size: cover;
+        min-height: 420px;
+    }
+    .wall {
+        background-size: cover;
+        min-height: 420px;
+    }
+    .btn-group {
+        margin-top: 320px;
+        margin-left: 10px;
+    }
+    .title {
+        min-height: 420px;
+    }
+    #contact-form {
+        min-height: 200px;;
+    }
+    .slot-freelancers {
+        height: 256px;
+        margin: 147px 2px;
+    }
+
+    #contact-form {
+        height: 256px;
+        margin: 147px 2px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .index-title {
+        background-size: cover;
+        min-width: 420px;
+    }
+    .wall {
+        background-size: cover;
+        min-width: 420px;
+    }
+    .header {
+        min-width: 420px;
+    }
+    .inner-header {
+        min-width: 420px;
+    }
+    .user-footer-links{
+        min-width: 420px;
+    }
+    .title {
+        min-width: 420px;
+    }
+    #contact-form {
+        min-width: 420px;;
+    }
+    .slot-freelancers {
+        width: 416px;
+        margin: 147px 2px;
+    }
+    #contact-form {
+        width: 256px;
+        margin: 147px 2px;
+    }
+}
+
+
+
+/* Textos */
+
+.title {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    margin-top: calc(50px + 5vh);
+    margin-bottom: 5vh;
+}
+
+
+.title-left {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin: calc(50px + 5vh) 5vh 0;
+}
+
+.index-h {
     position: absolute;
     margin-left: 3vh;
     margin-top: calc(50px + 2vh);
-    overflow: hidden;
-}
-.overflow {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    min-height: calc(100vh - 50px);
-    min-width: 100%;
 }
 
+.contact-label {
+    font-weight: bold;
+    width: 90%;
+    padding: 2vh;
+}
+.sign-up-label {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    width: 90%;
+    padding: 2%;
+}
+.radio-label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.name {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    position: absolute;
+    margin: 6px 76px;
+    font-weight: bold;
+}
+.area {
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    position: absolute;
+    font-style: oblique;
+    margin: 22px 76px;
+}
+.description {
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    position: absolute;
+    margin: 35px 76px;
+}
+
+
+
+.name-project {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    position: absolute;
+    margin: 6px 6px;
+    font-weight: bold;
+}
+.requirements {
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    position: absolute;
+    font-style: oblique;
+    margin: 24px 6px;
+}
+.description-project {
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    position: absolute;
+    margin: 40px 6px;
+}
+.name-client {
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    position: absolute;
+    margin: 90px 6px;
+}
+.layot-extended {
+    margin: 180px 6px;
+}
+
+
+/*  Input's  */
+
+#contact-name {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.7);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    width: 80%;
+    height: 20px;
+}
+#contact-name:hover {
+    background: rgba(255, 255, 255, 0.85);
+    color: rgb(0, 0, 0);
+}
+
+#sign-name {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.7);
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    padding: 5px;
+    width: 80%;
+    height: 20px;
+}
+#sign-name:hover {
+    background: rgba(255, 255, 255, 0.85);
+    color: rgb(0, 0, 0);
+}
+
+#contact-email {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.7);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    width: 80%;
+    height: 20px;
+}
+#contact-email:hover {
+    background: rgba(255, 255, 255, 0.85);
+    color: rgb(0, 0, 0);
+}
+
+#email-login {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.7);
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    padding: 5px;
+    width: 80%;
+    height: 20px;
+}
+#email-login:hover {
+    background: rgba(255, 255, 255, 0.85);
+    color: rgb(0, 0, 0);
+}
+
+#sign-email {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.7);
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    padding: 5px;
+    width: 80%;
+    height: 20px;
+}
+#sign-email:hover {
+    background: rgba(255, 255, 255, 0.85);
+    color: rgb(0, 0, 0);
+}
+
+#pass-login {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.7);
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    padding: 5px;
+    width: 80%;
+    height: 20px;
+}
+#pass-login:hover {
+    background: rgba(255, 255, 255, 0.85);
+    color: rgb(0, 0, 0);
+}
+
+#sign-pass {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.7);
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    padding: 5px;
+    width: 80%;
+    height: 20px;
+}
+#sign-pass:hover {
+    background: rgba(255, 255, 255, 0.85);
+    color: rgb(0, 0, 0);
+}
+
+#contact-message {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.7);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    width: 75%;
+    height: 40%;
+}
+#contact-message:hover {
+    background: rgba(255, 255, 255, 0.85);
+    color: rgb(0, 0, 0);
+}
+
+
+#offer {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.7);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    width: 10%;
+    height: 20px;
+    margin: 20px;
+}
+#offer:hover {
+    background: rgba(255, 255, 255, 0.85);
+    color: rgb(0, 0, 0);
+}
+
+
+/*  Rodapé  */
 
 .fotter { 
     position: fixed;
@@ -161,7 +703,7 @@ body {
 .user-footer-links {
     position: absolute;
     font-size: 12px;
-    background-color: rgb(111, 111, 111);
+    background-color: rgb(88, 88, 88);
     color: rgb(255, 255, 255);
     width: 100%;
     height: 100px;
@@ -172,6 +714,13 @@ body {
 .footer-links {
     color: rgb(255, 255, 255); 
     font-weight: bold; 
-    margin: 10px; 
+    margin: 10px;
+    border-radius: 7px;
+    padding: 7px;
     left: 20px; 
+}
+.footer-links:hover {
+    border: solid 1px rgb(0, 0, 0);
+    background-color: rgba(162, 162, 162, 0.2);
+    transition: 250ms;
 }

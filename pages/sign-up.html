@@ -5,11 +5,16 @@
   <meta name="description" content="Encontre freelancers para os seus projetos.">
   <meta name="keywords" content="freelancer, freelancers, projetos, trabalho">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/logo.png">
 
 
-  <title>Quem Somos? | Job For Me</title>
+  <title>Cadastre-se | Job For Me</title>
+  
+  <script src="js/functions.js "></script>
+
 </head>
 <body>
   <header class="header">
@@ -23,24 +28,27 @@
       </div>
     </div>
   </header>
+
+  <div id="slot-sign">
+    <label for="contact-name" class="sign-up-label">Nome&nbsp</label>
+    <input type="text" id="sign-name" name="sign-name" required autofocus>
+    <br>
+    <br>
+      <!-- Email -->
+    <label for="contact-email" class="sign-up-label">Email&nbsp</label>
+    <input type="email" id="sign-email" name="sign-email" placeholder="exemplo@gmail.com" required>
+    <br>
+    <br>
+    <label for="contact-name" class="sign-up-label">Senha</label>
+    <input type="text" id="sign-pass" name="sign-pass" required autofocus>
+    <br>
+    <button class="sign-btn" type="button" onclick="cadastrar ()" >Confirmar</button>
+  </div>
+  
+
   <div class="wall">
-     <div class="title">
-    <h1>
-      Quem Somos?
-    </h1>
-    <p class="about-p">
-      Nosso site busca conectar freelancers a clientes, facilitando o<br>
-      contato entre os mesmos.
-    </p>
-    <h1>
-      Equipe
-    </h1>
-    <div class="team">
-      <img src="img/Team.png" alt="Bruno Wanderson, João Victor e Renan Gabriel"
-      title="Bruno Wanderson, João Victor e Renan Gabriel" width="350">
-    </div>
   </div>
-  </div>
+
  
   <footer class="footer">
     <div class="inner-footer">
@@ -50,7 +58,6 @@
         </span>
         <a class="footer-links" href="about.html">Sobre</a>
         <a class="footer-links" href="contact.html">Contato</a>
-        <a class="footer-links" href="https://instagram.com/job_for.me?igshid=YmMyMTA2M2Y=">Saiba Mais</a>
     </div>
   </footer>
 </body>
