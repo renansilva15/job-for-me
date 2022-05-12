@@ -13,7 +13,7 @@ function logar (){
     var logMail = logM.toString();
 
     var url = ((logMail == localStorage.email) && 
-    (logPass == localStorage.pass)) ? (alert("Dados corretos"), "index-log.html") : 
+    (logPass == localStorage.pass)) ? ("index-log.html") : 
     (alert("Dados incorretos"), "sign-in.html");
 
     location.assign(url);
