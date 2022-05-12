@@ -374,6 +374,10 @@ body {
     background-position: center;
     min-height: 100vh;
 }
+.wall-2 {
+    background: url("../img/slide-09.jpg") no-repeat;
+    background-size: cover;
+}
 
 .team {
     width: 100%;
