@@ -117,6 +117,22 @@ body {
     transition: 250ms;
 }
 
+.open {
+    color: rgb(255, 255, 255);
+    background: rgb(88, 88, 88);
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 7px;
+    padding: 7px;
+    position: absolute;
+    margin: 10px 88%;
+}
+.open:hover {
+    border: solid 1px rgb(0, 0, 0);
+    background-color: rgba(162, 162, 162, 0.8);
+    transition: 250ms;
+}
+
 
 
 
@@ -169,6 +185,8 @@ body {
     }
 }
 
+
+
 .slot-freelancers {
     width: 70%;
     height: 60%;
@@ -201,15 +219,6 @@ body {
     }
 }
 
-.slot-freelancer {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 7px;
-    width: 90%;
-    height: 75px;
-    position: relative;
-    margin: 2% auto ;
-}
-
 .avatar {
     width: 69px;
     height: 69px;
@@ -219,6 +228,26 @@ body {
     position: absolute;
     margin: 3px 3px;
 }
+
+.slot-freelancer {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 7px;
+    width: 90%;
+    height: 75px;
+    position: relative;
+    margin: 2% auto ;
+}
+
+.slot-project {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 7px;
+    width: 90%;
+    height: 106px;
+    position: relative;
+    margin: 2% auto ;
+}
+
+
 
 
 /*  Cabeçalho  */
@@ -406,8 +435,6 @@ body {
     margin-top: calc(50px + 2vh);
 }
 
-
-
 .contact-label {
     font-weight: bold;
     width: 90%;
@@ -427,7 +454,6 @@ body {
     margin: 6px 76px;
     font-weight: bold;
 }
-
 .area {
     color: rgb(0, 0, 0);
     font-size: 11px;
@@ -435,12 +461,40 @@ body {
     font-style: oblique;
     margin: 22px 76px;
 }
-
 .description {
     color: rgb(0, 0, 0);
     font-size: 11px;
     position: absolute;
     margin: 35px 76px;
+}
+
+
+
+.name-project {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    position: absolute;
+    margin: 6px 6px;
+    font-weight: bold;
+}
+.requirements {
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    position: absolute;
+    font-style: oblique;
+    margin: 24px 6px;
+}
+.description-project {
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    position: absolute;
+    margin: 40px 6px;
+}
+.name-client {
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    position: absolute;
+    margin: 90px 6px;
 }
 
 
