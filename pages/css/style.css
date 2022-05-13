@@ -119,8 +119,8 @@ body {
     font-size: 12px;
     border-radius: 7px;
     padding: 7px;
-    position: absolute;
-    margin: 10px 82%;
+    position: relative;
+    margin: auto 69%;
 }
 .invite:hover {
     border: solid 1px rgb(0, 0, 0);
@@ -257,6 +257,9 @@ body {
         overflow-y: scroll;
     }
 }
+.slot-reserver {
+    overflow: hidden;
+}
 
 .avatar {
     width: 69px;
@@ -278,7 +281,7 @@ body {
     width: 128px;
     height: 128px;
     position: absolute;
-    margin: 5% 80%;
+    margin: 5% 65%;
 }
 
 .avatar2 {
