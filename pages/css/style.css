@@ -261,6 +261,11 @@ body {
     overflow: hidden;
 }
 
+.slot-notices {
+    position: absolute;
+    margin: calc(50px + 3%) 3%;
+}
+
 .avatar {
     width: 69px;
     height: 69px;
@@ -322,6 +327,14 @@ body {
     margin: 2% auto ;
 }
 
+.cards {
+    /*background: url("../img/notice.jpg");*/
+    width: 224px;
+    height: 224px;
+    position: absolute;
+    margin: 2% 2%;
+    display: flex;
+}
 
 
 
@@ -451,6 +464,9 @@ body {
         height: 256px;
         margin: 147px 2px;
     }
+    .slot-notices {
+        margin: calc(50px + 1%) 1%;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -485,6 +501,9 @@ body {
         width: 256px;
         margin: 147px 2px;
     }
+    .slot-notices {
+        margin: calc(50px + 1%) 1%;
+    }
 }
 
 
@@ -502,6 +521,16 @@ body {
     margin-bottom: 5vh;
 }
 
+.title-notice {
+    position: absolute;
+    margin: 4% calc(224px + 4%);
+}
+
+.notice {
+    position: absolute;
+    margin: 10% calc(224px + 6%) auto;
+    color: rgb(255, 255, 255);
+}
 
 .title-left {
     position: absolute;
