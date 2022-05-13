@@ -271,6 +271,16 @@ body {
     background: url("../img/frella1.jpg");
     background-size: cover;
 }
+.avatar1-frella {
+    background: url("../img/frella1.jpg");
+    background-size: cover;
+    border: 2px solid rgb(255, 255, 255);
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    margin: 5% 80%;
+}
+
 .avatar2 {
     background: url("../img/frella2.jpg");
     background-size: cover;
@@ -298,6 +308,7 @@ body {
     position: relative;
     margin: 2% auto ;
 }
+
 
 .slot-project-open {
     background: rgba(255, 255, 255, 0.8);
@@ -527,6 +538,13 @@ body {
     margin: 6px 76px;
     font-weight: bold;
 }
+.name-frella {
+    font-size: 20px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    margin: auto 3% 1%;
+}
+
 .area {
     color: rgb(0, 0, 0);
     font-size: 11px;
@@ -534,11 +552,32 @@ body {
     font-style: oblique;
     margin: 22px 76px;
 }
+.area-frella {
+    font-size: 14px;
+    font-style: oblique;
+    position: relative;
+    color: rgb(255, 255, 255);
+    margin: auto 3% 1%;
+}
+
 .description {
     color: rgb(0, 0, 0);
     font-size: 11px;
     position: absolute;
     margin: 35px 76px;
+}
+.description-frella {
+    font-size: 14px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    margin: auto 3% 4%;
+}
+
+.realizacoes {
+    font-size: 14px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    margin: auto 3% 4%;
 }
 
 
