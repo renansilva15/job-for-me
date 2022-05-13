@@ -13,6 +13,77 @@ body {
     min-width: 420px;
     min-height: 420px;
 }
+/* Controle do body */
+
+@media screen and (max-height: 420px) {
+    .index-title {
+        background-size: cover;
+        min-height: 420px;
+    }
+    .wall {
+        background-size: cover;
+        min-height: 420px;
+    }
+    .btn-group {
+        margin-top: 320px;
+        margin-left: 10px;
+    }
+    .title {
+        min-height: 420px;
+    }
+    #contact-form {
+        min-height: 200px;;
+    }
+    .slot-freelancers {
+        height: 256px;
+        margin: 147px 2px;
+    }
+
+    #contact-form {
+        height: 256px;
+        margin: 147px 2px;
+    }
+    .slot-notices {
+        margin: calc(50px + 1%) 1%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .index-title {
+        background-size: cover;
+        min-width: 420px;
+    }
+    .wall {
+        background-size: cover;
+        min-width: 420px;
+    }
+    .header {
+        min-width: 420px;
+    }
+    .inner-header {
+        min-width: 420px;
+    }
+    .user-footer-links{
+        min-width: 420px;
+    }
+    .title {
+        min-width: 420px;
+    }
+    #contact-form {
+        min-width: 420px;;
+    }
+    .slot-freelancers {
+        width: 416px;
+        margin: 147px 2px;
+    }
+    #contact-form {
+        width: 256px;
+        margin: 147px 2px;
+    }
+    .slot-notices {
+        margin: calc(50px + 1%) 1%;
+    }
+}
 
 
 
@@ -434,77 +505,7 @@ body {
 
 
 
-/* Controle do body */
 
-@media screen and (max-height: 420px) {
-    .index-title {
-        background-size: cover;
-        min-height: 420px;
-    }
-    .wall {
-        background-size: cover;
-        min-height: 420px;
-    }
-    .btn-group {
-        margin-top: 320px;
-        margin-left: 10px;
-    }
-    .title {
-        min-height: 420px;
-    }
-    #contact-form {
-        min-height: 200px;;
-    }
-    .slot-freelancers {
-        height: 256px;
-        margin: 147px 2px;
-    }
-
-    #contact-form {
-        height: 256px;
-        margin: 147px 2px;
-    }
-    .slot-notices {
-        margin: calc(50px + 1%) 1%;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .index-title {
-        background-size: cover;
-        min-width: 420px;
-    }
-    .wall {
-        background-size: cover;
-        min-width: 420px;
-    }
-    .header {
-        min-width: 420px;
-    }
-    .inner-header {
-        min-width: 420px;
-    }
-    .user-footer-links{
-        min-width: 420px;
-    }
-    .title {
-        min-width: 420px;
-    }
-    #contact-form {
-        min-width: 420px;;
-    }
-    .slot-freelancers {
-        width: 416px;
-        margin: 147px 2px;
-    }
-    #contact-form {
-        width: 256px;
-        margin: 147px 2px;
-    }
-    .slot-notices {
-        margin: calc(50px + 1%) 1%;
-    }
-}
 
 
 
