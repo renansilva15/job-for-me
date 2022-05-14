@@ -1,8 +1,6 @@
-
-
-function cadastrar (){
-    if (localStorage.name){
-        localStorage.clear()
+function cadastrar() {
+    if (localStorage.name) {
+        localStorage.clear();
         localStorage.name = document.getElementById("sign-name").value;
         localStorage.email = document.getElementById("sign-email").value;
         localStorage.pass = document.getElementById("sign-pass").value;
@@ -14,7 +12,7 @@ function cadastrar (){
     location.assign("sign-in.html");
 }
 
-function logar (){
+function logar() {
     var logM = document.getElementById("email-login").value;
     var logP = document.getElementById("pass-login").value;
     var logPass = logP.toString();

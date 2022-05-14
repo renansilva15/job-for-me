@@ -34,8 +34,6 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.4);
     background: rgba(88, 88, 88, 0.9);
     padding: 14px 28px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
     border-radius: 7px;
     color: rgb(255, 255, 255);
     font-size: 18px;
@@ -50,8 +48,6 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.4);
     background: rgba(88, 88, 88, 0.9);
     padding: 14px 28px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
     border-radius: 7px;
     color: rgb(255, 255, 255);
     font-size: 18px;
@@ -66,12 +62,12 @@ body {
 @media screen and (max-width: 422px) {
     .freelancer-btn {
         padding: 10px 20px;
-        font-size: 14;
+        font-size: 14px;
         margin-top: 10%;
     }
     .projects-btn {
         padding: 10px 20px;
-        font-size: 14;
+        font-size: 14px;
     }
 }
 
@@ -80,8 +76,6 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.4);
     background: rgba(88, 88, 88, 0.9);
     padding: 14px 28px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
     border-radius: 7px;
     color: rgb(255, 255, 255);
     font-size: 18px;
@@ -197,7 +191,7 @@ body {
 @media screen and (max-width: 550px) {
     #contact-form {
         width: 98%;
-        margin-top: calc(50px + 15vh) 1%;
+        margin: calc(50px + 15vh) 1%;
         padding: 10px;
         overflow-y: scroll;
     }
