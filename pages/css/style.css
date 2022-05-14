@@ -15,77 +15,7 @@ body {
 
 
 
-/* Controle do body */
 
-@media screen and (max-height: 420px) {
-    .index-title {
-        background-size: cover;
-        min-height: 420px;
-    }
-    .wall {
-        background-size: cover;
-        min-height: 420px;
-    }
-    .btn-group {
-        margin-top: 320px;
-        margin-left: 10px;
-    }
-    .title {
-        min-height: 420px;
-    }
-    #contact-form {
-        min-height: 200px;;
-    }
-    .slot-freelancers {
-        height: 256px;
-        margin: 147px 2px;
-    }
-
-    #contact-form {
-        height: 256px;
-        margin: 147px 2px;
-    }
-    .slot-notices {
-        margin: calc(50px + 1%) 1%;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .index-title {
-        background-size: cover;
-        min-width: 420px;
-    }
-    .wall {
-        background-size: cover;
-        min-width: 420px;
-    }
-    .header {
-        min-width: 420px;
-    }
-    .inner-header {
-        min-width: 420px;
-    }
-    .user-footer-links{
-        min-width: 420px;
-    }
-    .title {
-        min-width: 420px;
-    }
-    #contact-form {
-        min-width: 420px;;
-    }
-    .slot-freelancers {
-        width: 416px;
-        margin: 147px 2px;
-    }
-    #contact-form {
-        width: 256px;
-        margin: 147px 2px;
-    }
-    .slot-notices {
-        margin: calc(50px + 1%) 1%;
-    }
-}
 
 
 
@@ -285,8 +215,17 @@ body {
         height: 230px;
     }
 }
-
-
+.slot-notices {
+    position: absolute;
+    margin: calc(50px + 3%) 3%;
+}
+@media screen and (max-width: 1015px) {
+    .slot-notices {
+        width: 90%;
+        position: absolute;
+        margin: 60px 10px;
+    }
+}
 
 .slot-freelancers {
     width: 70%;
@@ -313,18 +252,27 @@ body {
         width: 98%;
         margin: 35% 1%;
     }
+    .slot-notices {
+        width: 420px;
+        height: 300px;
+        position: absolute;
+        margin: 60px 10px;
+    }
+    
 }
 @media screen and (max-height: 630px ) { 
     .slot-freelancers {
         overflow-y: scroll;
     }
+    .slot-notices {
+        width: 80%;
+        height: 300px;
+        position: absolute;
+        margin: 60px 10px;
+    }
 }
 .slot-reserver {
     overflow: hidden;
-}
-.slot-notices {
-    position: absolute;
-    margin: calc(50px + 3%) 3%;
 }
 .avatar {
     width: 69px;
@@ -502,8 +450,8 @@ body {
     margin: 4% calc(224px + 4%);
 }
 .notice {
-    position: absolute;
-    margin: 10% calc(224px + 6%) auto;
+    position: relative;
+    margin: 10% calc(224px + 6%);
     color: rgb(255, 255, 255);
 }
 .title-left {
@@ -640,7 +588,6 @@ body {
     background: rgba(255, 255, 255, 0.85);
     color: rgb(0, 0, 0);
 }
-
 #contact-email {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
@@ -737,6 +684,85 @@ body {
     background: rgba(255, 255, 255, 0.85);
     color: rgb(0, 0, 0);
 }
+
+
+
+/* Controle do body */
+
+@media screen and (max-height: 420px) {
+    .index-title {
+        background-size: cover;
+        min-height: 420px;
+    }
+    .wall {
+        background-size: cover;
+        min-height: 420px;
+    }
+    .btn-group {
+        margin-top: 320px;
+        margin-left: 10px;
+    }
+    .title {
+        min-height: 420px;
+    }
+    #contact-form {
+        min-height: 200px;;
+    }
+    .slot-freelancers {
+        height: 256px;
+        margin: 147px 2px;
+    }
+
+    #contact-form {
+        height: 256px;
+        margin: 147px 2px;
+    }
+    .slot-notices {
+        margin: calc(50px + 1%) 1%;
+    }
+    
+}
+@media screen and (max-width: 420px) {
+    .index-title {
+        background-size: cover;
+        min-width: 420px;
+    }
+    .wall {
+        background-size: cover;
+        min-width: 420px;
+    }
+    .header {
+        min-width: 420px;
+    }
+    .inner-header {
+        min-width: 420px;
+    }
+    .user-footer-links{
+        min-width: 420px;
+    }
+    .title {
+        min-width: 420px;
+    }
+    #contact-form {
+        min-width: 420px;;
+    }
+    .slot-freelancers {
+        width: 416px;
+        margin: 147px 2px;
+    }
+    #contact-form {
+        width: 256px;
+        margin: 147px 2px;
+    }
+    .slot-notices {
+        margin: calc(50px + 1%) 1%;
+    }
+    #slot-sign {
+        width: 400px;
+        margin: calc(50px + 15px) 10px 0;
+    }
+}
+
 
 
 /*  Rodapé  */

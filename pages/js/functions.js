@@ -1,9 +1,17 @@
 
 
 function cadastrar (){
-    localStorage.name = document.getElementById("sign-name").value;
-    localStorage.email = document.getElementById("sign-email").value;
-    localStorage.pass = document.getElementById("sign-pass").value;
+    if (localStorage.name){
+        localStorage.clear()
+        localStorage.name = document.getElementById("sign-name").value;
+        localStorage.email = document.getElementById("sign-email").value;
+        localStorage.pass = document.getElementById("sign-pass").value;
+    }else {
+        localStorage.name = document.getElementById("sign-name").value;
+        localStorage.email = document.getElementById("sign-email").value;
+        localStorage.pass = document.getElementById("sign-pass").value;
+    }
+    location.assign("sign-in.html");
 }
 
 function logar (){
