@@ -8,11 +8,13 @@
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
 }
-
 body {
     min-width: 420px;
     min-height: 420px;
 }
+
+
+
 /* Controle do body */
 
 @media screen and (max-height: 420px) {
@@ -98,8 +100,6 @@ body {
     display: inline-block;
     position: relative;
 }
-
-
 .freelancer-btn {
     border: 1px solid rgba(0, 0, 0, 0.4);
     background: rgba(88, 88, 88, 0.9);
@@ -116,7 +116,6 @@ body {
     background: rgba(88, 88, 88, 0.5);
     color: rgb(255, 255, 255);
 }
-
 .projects-btn {
     border: 1px solid rgba(0, 0, 0, 0.4);
     background: rgba(88, 88, 88, 0.9);
@@ -164,8 +163,6 @@ body {
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
-
-
 .sign-btn {
     color: rgb(0, 0, 0);
     padding: 10px 20px 10px 20px;
@@ -181,8 +178,6 @@ body {
     background-color: rgba(162, 162, 162, 0.5);
     transition: 250ms;
 }
-
-
 .invite {
     color: rgb(255, 255, 255);
     background: rgb(88, 88, 88);
@@ -198,7 +193,6 @@ body {
     background-color: rgba(162, 162, 162, 0.8);
     transition: 250ms;
 }
-
 .open {
     color: rgb(255, 255, 255);
     background: rgb(88, 88, 88);
@@ -214,7 +208,6 @@ body {
     background-color: rgba(162, 162, 162, 0.8);
     transition: 250ms;
 }
-
 .back-btn {
     position: absolute;
     margin: 10px 60%;
@@ -223,7 +216,6 @@ body {
     position: absolute;
     margin: 10px 75%;
 }
-
 .back-offer-btn {
     display: block;
     position: absolute;
@@ -266,7 +258,6 @@ body {
     border-radius: 5px;
     justify-content: center;
 }
-
 @media screen and (max-width: 872px) {
     #contact-form {
         width: 96%;
@@ -331,12 +322,10 @@ body {
 .slot-reserver {
     overflow: hidden;
 }
-
 .slot-notices {
     position: absolute;
     margin: calc(50px + 3%) 3%;
 }
-
 .avatar {
     width: 69px;
     height: 69px;
@@ -359,7 +348,6 @@ body {
     position: absolute;
     margin: 5% 65%;
 }
-
 .avatar2 {
     background: url("../img/frella2.jpg");
     background-size: cover;
@@ -368,8 +356,6 @@ body {
     background: url("../img/frella3.jpg");
     background-size: cover;
 }
-
-
 .slot-freelancer {
     background: rgba(255, 255, 255, 0.8);
     border-radius: 7px;
@@ -378,7 +364,6 @@ body {
     position: relative;
     margin: 2% auto ;
 }
-
 .slot-project {
     background: rgba(255, 255, 255, 0.8);
     border-radius: 7px;
@@ -387,8 +372,6 @@ body {
     position: relative;
     margin: 2% auto ;
 }
-
-
 .slot-project-open {
     background: rgba(255, 255, 255, 0.8);
     border-radius: 7px;
@@ -397,7 +380,6 @@ body {
     position: relative;
     margin: 2% auto ;
 }
-
 .cards {
     /*background: url("../img/notice.jpg");*/
     width: 224px;
@@ -419,12 +401,10 @@ body {
     background: rgba(88, 88, 88, 0.9);
     color: rgb(255, 255, 255);
 }
-
 .inner-header {
     height: 50px;
     width: 100%;
 }
-
 .user-links {
     height: 50px;
     display: flex;
@@ -432,7 +412,6 @@ body {
     align-items: center;
     justify-content: right;
 }
-
 .links {
     display: block;
     color: rgb(255, 255, 255);
@@ -477,7 +456,6 @@ body {
         background-size: cover;
     }
 }
-
 .wall {
     color: rgb(255, 255, 255);
     display: flex;
@@ -490,15 +468,12 @@ body {
     background: url("../img/slide-09.jpg") no-repeat;
     background-size: cover;
 }
-
 .team {
     width: 100%;
     height: 300px;
     object-fit: cover;
     object-position: bottom;
 }
-
-
 .about-p {
     margin: 3vh;
 }
@@ -521,31 +496,26 @@ body {
     margin-top: calc(50px + 5vh);
     margin-bottom: 5vh;
 }
-
 .title-notice {
     position: absolute;
     margin: 4% calc(224px + 4%);
 }
-
 .notice {
     position: absolute;
     margin: 10% calc(224px + 6%) auto;
     color: rgb(255, 255, 255);
 }
-
 .title-left {
     position: absolute;
     color: rgb(255, 255, 255);
     text-align: left;
     margin: calc(50px + 5vh) 5vh 0;
 }
-
 .index-h {
     position: absolute;
     margin-left: 3vh;
     margin-top: calc(50px + 2vh);
 }
-
 .contact-label {
     font-weight: bold;
     width: 90%;
@@ -563,7 +533,6 @@ body {
     width: 90%;
     justify-content: space-between;
 }
-
 .name {
     color: rgb(0, 0, 0);
     font-size: 14px;
@@ -577,7 +546,6 @@ body {
     color: rgb(255, 255, 255);
     margin: auto 3% 1%;
 }
-
 .area {
     color: rgb(0, 0, 0);
     font-size: 11px;
@@ -592,7 +560,6 @@ body {
     color: rgb(255, 255, 255);
     margin: auto 3% 1%;
 }
-
 .description {
     color: rgb(0, 0, 0);
     font-size: 11px;
@@ -605,16 +572,12 @@ body {
     color: rgb(255, 255, 255);
     margin: auto 3% 4%;
 }
-
 .realizacoes {
     font-size: 14px;
     position: relative;
     color: rgb(255, 255, 255);
     margin: auto 3% 4%;
 }
-
-
-
 .name-project {
     color: rgb(0, 0, 0);
     font-size: 14px;
@@ -690,7 +653,6 @@ body {
     background: rgba(255, 255, 255, 0.85);
     color: rgb(0, 0, 0);
 }
-
 #email-login {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
@@ -705,7 +667,6 @@ body {
     background: rgba(255, 255, 255, 0.85);
     color: rgb(0, 0, 0);
 }
-
 #sign-email {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
@@ -720,7 +681,6 @@ body {
     background: rgba(255, 255, 255, 0.85);
     color: rgb(0, 0, 0);
 }
-
 #pass-login {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
@@ -735,7 +695,6 @@ body {
     background: rgba(255, 255, 255, 0.85);
     color: rgb(0, 0, 0);
 }
-
 #sign-pass {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
@@ -750,7 +709,6 @@ body {
     background: rgba(255, 255, 255, 0.85);
     color: rgb(0, 0, 0);
 }
-
 #contact-message {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
@@ -764,8 +722,6 @@ body {
     background: rgba(255, 255, 255, 0.85);
     color: rgb(0, 0, 0);
 }
-
-
 #offer {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
@@ -789,7 +745,6 @@ body {
     bottom: 0;
     color: rgb(255, 255, 255);
 }
-
 .user-footer-links {
     position: absolute;
     font-size: 12px;
@@ -800,7 +755,6 @@ body {
     text-align: center;
     line-height: 100px;
 }
-
 .footer-links {
     color: rgb(255, 255, 255); 
     font-weight: bold; 
