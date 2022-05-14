@@ -381,7 +381,8 @@ body {
     margin: 2% auto ;
 }
 .cards {
-    /*background: url("../img/notice.jpg");*/
+    background: url("../img/notice.jpg");
+    background-size: cover;
     width: 224px;
     height: 224px;
     position: absolute;
